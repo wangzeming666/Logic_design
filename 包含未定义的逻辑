@@ -1,0 +1,15 @@
+程序由于出错等情况，经常会得不到true或false中的任何一个值，所以引入了undefined
+true, false, undefined 三值逻辑
+A && B 的逻辑结果，根据条件A是否为true判断是否需要看B，因此称为待条件的逻辑与。
+如
+if (check() && execute()) {
+    ....
+}
+
+关于undefined的判断
+    当A为undefined时, A&&B的结果恒为undefined
+                      A||B的结果恒为undefined
+                      !A 的结果恒为undefined 
+德·摩根定律在三值逻辑中也成立。
+(!A) || (!B) = !(A && B)
+(!A) && (!B) = !(A || B)
